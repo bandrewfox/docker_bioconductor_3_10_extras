@@ -21,7 +21,7 @@ RUN install2.r --error --deps TRUE \
     cowplot
 
 RUN Rscript -e 'BiocManager::install(c("UpSetR", "VennDiagram"))'
-
+RUN Rscript -e 'BiocManager::install(c("org.Rn.eg.db"))'
 
 CMD ["/init"]
 
